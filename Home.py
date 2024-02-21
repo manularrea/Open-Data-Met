@@ -49,8 +49,8 @@ El proyecto se centra en responder las siguientes preguntas:
 # Pie de página
 st.markdown("---")
 st.write('Manuela Larrea Gómez')
-st.write('Afi Escuela')
 st.write('Máster en Data Science, Big Data e Inteligencia Artificial')
+st.write('Afi Escuela')
 st.write('Febrero, 2024')
 
 
