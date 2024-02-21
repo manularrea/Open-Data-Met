@@ -21,7 +21,7 @@ st.sidebar.title('The Metropolitan Museum of Art')
 # Título
 st.title("Visitando el Met de NYC sin salir de Madrid")
 
-st.image('https://cdn.sanity.io/images/cctd4ker/production/73a42b4ea1644b2085acaad2896bfa4699687664-2320x920.jpg?rect=405,0,1490,920&w=3840&q=75&fit=clip&auto=format')
+st.image('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.metmuseum.org%2Fblogs%2Fnow-at-the-met%2F2018%2Fvan-gogh-whats-new-nineteenth-century-european-paintings&psig=AOvVaw3LzjSk3__xKfLhzUAsG56V&ust=1708631365188000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjRov-ZvYQDFQAAAAAdAAAAABAE')
 
 # Descripción del proyecto
 st.markdown("""
@@ -49,7 +49,7 @@ El proyecto se centra en responder las siguientes preguntas:
 # Pie de página
 st.markdown("---")
 st.write('Manuela Larrea Gómez')
-st.write('Afi Escuela de Negocios')
+st.write('Afi Escuela')
 st.write('Máster en Data Science, Big Data e Inteligencia Artificial')
 st.write('Febrero, 2024')
 
