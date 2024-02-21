@@ -16,7 +16,7 @@ image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/The_Metro
 image_2_url = 'https://s3-eu-central-1.amazonaws.com/centaur-wp/designweek/prod/content/uploads/2016/02/18171555/Met-logo.png'
 st.sidebar.markdown(f'<div style="text-align:center;padding-bottom:10px;"><img src="{image_2_url}" width="30%"></div>', unsafe_allow_html=True)
 st.sidebar.markdown(f'<div style="text-align:center;padding-bottom:10px;"><img src="{image_url}" width="50%"></div>', unsafe_allow_html=True)
-st.sidebar.title('The Metropolitan Museum of Art')
+st.sidebar.title('El Museo Metropolitano de Arte de Nueva York')
 
 # Título
 st.title("Visitando el Met de NYC sin salir de Madrid")
