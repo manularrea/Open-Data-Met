@@ -1,5 +1,12 @@
+# Esta clase se construyó para apoyar la limpieza del dataset, con ella se busca:
+#  1. Normalizar los datos de las nacionalidades.
+#  2. Mapear las nacionalidades a países.
+#  3. Normalizar los datos de los países.
+
 class NationalityMapper:
+    # Esta clase encapsula la lógica para mapear nacionalidades a países y proporciona métodos para acceder a esta funcionalidad.
     def __init__(self):
+        # Diccionario que mapea nacionalidades a sus países correspondientes.
         self.mapping = {
             "Afghan": "Afghanistan",
             "Albanian": "Albania",
@@ -193,6 +200,8 @@ class NationalityMapper:
             "Zambian": "Zambia",
             "Zimbabwean": "Zimbabwe",
         }
+
+        # Diccionario que contiene los mapeos conocidos de países a listas de variantes de nombres de países
         self.known_mappings={
             'Afghanistan': ['Afghanistan'],
             'Albania': ['Albania'],
@@ -209,6 +218,7 @@ class NationalityMapper:
             'Bahrain': ['Bahrain'],
             'Bangladesh': ['Bangladesh'],
             'Barbados': ['Barbados'],
+            'Balkans' : ['Balkans'],
             'Belarus': ['Belarus'],
             'Belgium': ['Belgium'],
             'Belize': ['Belize'],
@@ -240,6 +250,7 @@ class NationalityMapper:
             'Cyprus': ['Cyprus'],
             'Czech Republic': ['Czech Republic'],
             'North Korea': ['Democratic People\'s Republic of Korea', 'North Korea'],
+            'England' : ['England'],
             'Democratic Republic of the Congo': ['Democratic Republic of the Congo', 'DMR', 'Dem. Rep. Congo'],
             'Denmark': ['Denmark'],
             'Djibouti': ['Djibouti'],
@@ -363,14 +374,14 @@ class NationalityMapper:
             'Suriname': ['Suriname'],
             'Sweden': ['Sweden', 'Scandinavia (possibly Sweden)'],
             'Switzerland': ['Switzerland'],
-            'Syrian Arab Republic': ['Syrian Arab Republic'],
+            'Syria': ['Syrian Arab Republic', 'Syria'],
             'Tajikistan': ['Tajikistan'],
             'Thailand': ['Thailand'],
             'Timor-Leste': ['Timor-Leste'],
             'Togo': ['Togo'],
             'Tonga': ['Tonga'],
             'Trinidad and Tobago': ['Trinidad and Tobago'],
-            'Tunisia': ['Tunisia', 'Tunesia'],
+            'Tunisia': ['Tunisia', 'Tunesia', 'Probably Tunesia'],
             'Turkey': ['Turkey'],
             'Turkmenistan': ['Turkmenistan'],
             'Tuvalu': ['Tuvalu'],
@@ -391,8 +402,10 @@ class NationalityMapper:
             'Unknown': ['Unknown']
         }
 
+    # Método para obtener el país correspondiente a una nacionalidad dada
     def get_country_by_nationality(self, nationality):
         return self.mapping.get(nationality, "Unknown")
     
+    # Método para obtener los mapeos conocidos de países
     def get_known_mappings(self):
         return self.known_mappings
