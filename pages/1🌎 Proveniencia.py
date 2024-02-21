@@ -46,7 +46,7 @@ accession_years = [x for x in accession_years if isinstance(x, int)]
 adquisicion_slider =st.slider('Año mínimo de adquisición:', min_value=min(accession_years), max_value=max(accession_years), value=min(accession_years))
 df_filtered = apply_accession_filter(df_filtered, adquisicion_slider)
 
-department_check_box = st.checkbox('Filtrar por departamento', value=False)
+department_check_box = st.checkbox('Filtrar por departamento del museo', value=False)
 if department_check_box== True:
     department_options = st.multiselect(
     'Departamento de la obra',

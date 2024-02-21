@@ -36,13 +36,11 @@ st.subheader('Objetivos del proyecto')
 
 st.markdown("""
 El proyecto se centra en responder las siguientes preguntas:
-1.	¿De dónde provienen las obras de arte del Met?
-2.	¿Cuáles son los artistas que más le interesan al Met?
-3.	¿Cuáles son las culturas que más le interesan al Met?
-4.	¿Cuál es el departamento del museo que tiene más piezas?
-5.	¿Cuál es la evolución temporal del tamaño de la colección del Met?
-6.	¿Cuáles son las obras más importantes del Met?
-7.	¿Qué porción de las obras de arte del Met son de dominio público? 
+1.	¿De dónde provienen las obras de arte del Met? ¿Qué pasa si se filtra por obras destacadas? ¿Varía si las obras son de dominio público o protegidas por derechos de autor?
+2.	¿Cuáles son los artistas que más le interesan al Met? ¿Qué pasa si se filtra por obras destacadas? ¿Varía si las obras son de dominio público o protegidas por derechos de autor?
+3.	¿Cuáles son las culturas que más le interesan al Met? ¿Qué pasa si se filtra por obras destacadas? ¿Varía si las obras son de dominio público o protegidas por derechos de autor?
+4.	¿Cuál es la evolución temporal del tamaño de la colección del Met? ¿Qué pasa si se filtra por obras destacadas? ¿Varía si las obras son de dominio público o protegidas por derechos de autor?
+
             """)
 
 # Pie de página
