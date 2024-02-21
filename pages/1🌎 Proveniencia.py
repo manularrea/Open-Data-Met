@@ -58,13 +58,11 @@ if department_check_box== True:
 
 
 df_countries = df_filtered.groupby('country').size().reset_index(name='Número de piezas')
-mean_accession_year_per_country = df_filtered.groupby('country')['accessionYear'].mean().round(0).reset_index()
 accession_years_graph = df_filtered.groupby('country')['accessionYear'].agg(list).reset_index()
 
 
 
 # Merge the mean accession year data with the original DataFrame
-df_countries = df_countries.merge(mean_accession_year_per_country, on='country', how='left')
 df_countries = df_countries.merge(accession_years_graph, on='country', how='left')
 
 df_countries = df_countries.sort_values(by='Número de piezas', ascending=False)
@@ -77,9 +75,8 @@ expander = st.expander("Ver data")
 expander.dataframe(df_countries, column_config = 
             {
                 'country': 'País',
-                'accessionYear_x' : 'Año de adquisición promedio',
                 "accessionYear_y": st.column_config.LineChartColumn(
-                    "Años de adquisición", y_min=min(accession_years), y_max=max(accession_years)
+                "Años de adquisición", y_min=min(accession_years), y_max=max(accession_years)
         ),
             },
             

@@ -16,8 +16,6 @@ image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/The_Metro
 image_2_url = 'https://s3-eu-central-1.amazonaws.com/centaur-wp/designweek/prod/content/uploads/2016/02/18171555/Met-logo.png'
 st.sidebar.markdown(f'<div style="text-align:center;padding-bottom:10px;"><img src="{image_2_url}" width="30%"></div>', unsafe_allow_html=True)
 st.sidebar.markdown(f'<div style="text-align:center;padding-bottom:10px;"><img src="{image_url}" width="50%"></div>', unsafe_allow_html=True)
-image_3_url = "https://www.metmuseum.org/-/media/images/blogs/now-at-the-met/2018/2018_08/on-the-gogh-nineteenth-century-european-paintings/seurat_angrand.jpg?as=1&mh=1532&mw=2320&sc_lang=en&hash=C25115ECE0C84F3D18AE49EFF880A264"
-#st.sidebar.title('El Museo Metropolitano de Arte de Nueva York')
 
 # Título
 st.title("Visitando el Met de NYC sin salir de Madrid")
