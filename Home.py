@@ -21,7 +21,7 @@ st.sidebar.title('The Metropolitan Museum of Art')
 # Título
 st.title("Visitando el Met de NYC sin salir de Madrid")
 
-st.image('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.metmuseum.org%2Fblogs%2Fnow-at-the-met%2F2018%2Fvan-gogh-whats-new-nineteenth-century-european-paintings&psig=AOvVaw3LzjSk3__xKfLhzUAsG56V&ust=1708631365188000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjRov-ZvYQDFQAAAAAdAAAAABAE')
+st.image('https://www.metmuseum.org/-/media/images/blogs/now-at-the-met/2018/2018_08/on-the-gogh-nineteenth-century-european-paintings/1_gallery825_van-gogh.jpg?as=1&mh=1324&mw=2320&sc_lang=en&hash=A6E5965AD22CB24EB5CC94E2CE84AEA6')
 
 # Descripción del proyecto
 st.markdown("""
