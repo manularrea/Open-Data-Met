@@ -62,12 +62,12 @@ culture_count = culture_count[culture_count['Número de Piezas'] >= min_piece_co
 # GRÁFICO
 bars = alt.Chart(culture_count).mark_bar().encode(
     x=alt.X('Número de Piezas', axis=alt.Axis(title='Número de piezas')),
-    y=alt.Y('culture:N', sort='-x', axis=alt.Axis(title='Clase de la obra', labelFontSize=10)),  
+    y=alt.Y('culture:N', sort='-x', axis=alt.Axis(title='Cultura', labelFontSize=10)),  
     tooltip=[
         alt.Tooltip('culture:N', title='Cultura'),
     ]
 ).properties(
-    title='Clasificación de las obras del MET'
+    title='Culturas de las obras del MET'
 )
 
 st.altair_chart(bars, theme='streamlit', use_container_width=True)
@@ -76,6 +76,6 @@ st.altair_chart(bars, theme='streamlit', use_container_width=True)
 #------------------------------ SIDE BAR --------------------------------------
 st.sidebar.markdown("---")
 st.sidebar.header('Manuela Larrea Gómez')
-st.sidebar.write('Afi Escuela de Finanzas')
 st.sidebar.write('Máster en Data Science, Big Data e Inteligencia Artificial')
+st.sidebar.write('Afi Escuela')
 st.sidebar.write('Febrero, 2024')

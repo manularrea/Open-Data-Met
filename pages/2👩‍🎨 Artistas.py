@@ -48,7 +48,7 @@ accession_years = [x for x in accession_years if isinstance(x, int)]
 adquisicion_slider =st.slider('Año mínimo de adquisición:', min_value=min(accession_years), max_value=max(accession_years), value=min(accession_years))
 df_filtered = apply_accession_filter(df_filtered, adquisicion_slider)
 
-department_check_box = st.checkbox('Filtrar por departamento', value=False)
+department_check_box = st.checkbox('Filtrar por departamento del museo', value=False)
 
 if department_check_box== True:
     department_options = st.multiselect(
@@ -70,7 +70,7 @@ print(min_piece_count)
 # Filtrar los artists con un número menor al número mínimo establecido
 artist_counts = artist_counts[artist_counts['Piece Count'] >= min_piece_count]
 
-mean_accession_year_per_country = df_filtered.groupby('artistDisplayName')['accessionYear'].mean().round(0).reset_index()
+mean_accession_year_per_country = df_filtered.groupby('artistDisplayName')['accessionYear'].max().round(0).reset_index()
 artist_counts = artist_counts.merge(mean_accession_year_per_country, on='artistDisplayName', how='left')
 
 
@@ -83,7 +83,7 @@ bars = alt.Chart(artist_counts).mark_bar().encode(
     tooltip=[
         alt.Tooltip('artistDisplayName:N', title='Nombre del artista'),
         alt.Tooltip('artistNationality:N', title='Nacionalidad del artista'),
-        alt.Tooltip('accessionYear:Q', title='Año de adquisición promedio'),
+        alt.Tooltip('accessionYear:Q', title='Año de mayor adquisición'),
         alt.Tooltip('Piece Count:Q', title='Número de piezas')
     ]
 ).properties(
@@ -97,6 +97,6 @@ st.altair_chart(bars, theme='streamlit', use_container_width=True)
 #------------------------------ SIDE BAR --------------------------------------
 st.sidebar.markdown("---")
 st.sidebar.header('Manuela Larrea Gómez')
-st.sidebar.write('Afi Escuela de Finanzas')
 st.sidebar.write('Máster en Data Science, Big Data e Inteligencia Artificial')
+st.sidebar.write('Afi Escuela')
 st.sidebar.write('Febrero, 2024')

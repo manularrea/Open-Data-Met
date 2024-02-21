@@ -26,7 +26,7 @@ st.sidebar.title('The Metropolitan Museum of Art')
 # -----------------------------------------------------------------------
 
 
-st.title('5. ¿Cuál es la evolución temporal del tamaño de la colección del Met?')
+st.title('4. ¿Cuál es la evolución temporal del tamaño de la colección del Met?')
 
 # Filtros globales para la data
 col1, col2= st.columns(2)
@@ -44,7 +44,7 @@ accession_years = [x for x in accession_years if isinstance(x, int)]
 adquisicion_slider =st.slider('Año mínimo de adquisición:', min_value=min(accession_years), max_value=max(accession_years), value=min(accession_years))
 df_filtered = apply_accession_filter(df_filtered, adquisicion_slider)
 
-department_check_box = st.checkbox('Filtrar por departamento', value=False)
+department_check_box = st.checkbox('Filtrar por departamento del museo', value=False)
 if department_check_box== True:
     container = st.container()
     col1, col2 = container.columns([3, 1])
@@ -90,6 +90,6 @@ st.altair_chart(chart, use_container_width=True)
 #------------------------------ SIDE BAR --------------------------------------
 st.sidebar.markdown("---")
 st.sidebar.header('Manuela Larrea Gómez')
-st.sidebar.write('Afi Escuela de Finanzas')
 st.sidebar.write('Máster en Data Science, Big Data e Inteligencia Artificial')
+st.sidebar.write('Afi Escuela')
 st.sidebar.write('Febrero, 2024')
