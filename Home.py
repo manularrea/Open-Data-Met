@@ -19,34 +19,32 @@ st.sidebar.markdown(f'<div style="text-align:center;padding-bottom:10px;"><img s
 st.sidebar.title('The Metropolitan Museum of Art')
 
 # Título
-st.title("Bienvenido al Proyecto MET")
+st.title("Visitando el Metropolitan Art Museum de NYC sin salir de Madrid")
 
-st.image('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1200px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg')
+st.image('https://cdn.sanity.io/images/cctd4ker/production/73a42b4ea1644b2085acaad2896bfa4699687664-2320x920.jpg?rect=405,0,1490,920&w=3840&q=75&fit=clip&auto=format')
 
 # Descripción del proyecto
 st.markdown("""
 
-El Metropolitan Museum of Art (MET), una institución cultural de renombre internacional, se erige como un bastión del arte y la historia, albergando una colección que abarca desde la antigüedad hasta el arte contemporáneo.
+Este proyecto se basa en la política de datos abiertos del Museo Metropolitano de Arte de Nueva York (The Met) y utiliza su API para acceder a su vasta colección de obras de arte. En febrero de 2017, The Met lanzó su Iniciativa de Acceso Abierto, que permite el uso irrestricto de todas las imágenes de obras de arte de dominio público y datos básicos de todas las obras en su colección bajo la licencia Creative Commons Zero (CC0). Esto significa que cualquier persona puede descargar, compartir y remezclar imágenes y datos sobre las obras de arte en la colección de The Met.
 
-El Museo Metropolitano de Arte presenta más de 5000 años de arte de todo el mundo para que todos puedan experimentar y disfrutar. El Museo está ubicado en dos sitios emblemáticos de la ciudad de Nueva York: The Met Fifth Avenue y The Met Cloisters. Millones de personas también participan en la experiencia The Met en línea.
-
-Desde su fundación en 1870, el Met siempre ha aspirado a ser más que un tesoro de objetos raros y hermosos. Cada día, el arte cobra vida en las galerías del Museo y a través de sus exposiciones y eventos, revelando nuevas ideas y conexiones inesperadas a través del tiempo y de las culturas.
-
-El Museo Metropolitano de Arte proporciona conjuntos de datos selectos de información sobre más de 470.000 obras de arte de su colección para uso comercial y no comercial sin restricciones. 
-
-Los conjuntos de datos de acceso abierto del Met están disponibles a través de su API.  Este proyecto se propone aprovecharla para obtener datos exhaustivos sobre la colección de arte del Museo, y responder las siguientes preguntas: 
-
-1. ¿De dónde provienen las obras de arte del MET?
-2. ¿Qué artistas le interesan al MET?
-3. ¿Qué departamento tiene el mayor número de piezas?
-4. ¿Qué culturas le interesan al MET?
-5. ¿Cuáles son los materiales más usados en las obras de arte que se encuentran en el MET?
-6. ¿Cuál es la evolución temporal del número de obras en la colección del MET?
-7. ¿Cuáles son las obras más importantes del MET?
-8. ¿Qué porción de las obras de arte del MET son de dominio público?
-
+El proyecto también se apoya en la API de Google Maps, que proporciona una amplia gama de servicios y herramientas para crear y optimizar aplicaciones basadas en la ubicación. Esta combinación permite visualizar la información de las obras de arte en un contexto geográfico, proporcionando una nueva dimensión a la exploración de la colección de The Met.
+Finalmente, para desplegar la aplicación, se utiliza Streamlit.
+            
 """)
 
+st.subheader('Objetivos del proyecto')
+
+st.markdown("""
+El proyecto se centra en responder las siguientes preguntas:
+1.	¿De dónde provienen las obras de arte del Met?
+2.	¿Cuáles son los artistas que más le interesan al Met?
+3.	¿Cuáles son las culturas que más le interesan al Met?
+4.	¿Cuál es el departamento del museo que tiene más piezas?
+5.	¿Cuál es la evolución temporal del tamaño de la colección del Met?
+6.	¿Cuáles son las obras más importantes del Met?
+7.	¿Qué porción de las obras de arte del Met son de dominio público? 
+            """)
 
 # Pie de página
 st.markdown("---")
