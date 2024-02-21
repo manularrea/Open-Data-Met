@@ -19,7 +19,7 @@ st.sidebar.markdown(f'<div style="text-align:center;padding-bottom:10px;"><img s
 st.sidebar.title('The Metropolitan Museum of Art')
 
 # Título
-st.title("Visitando el Metropolitan Art Museum de NYC sin salir de Madrid")
+st.title("Visitando el Met de NYC sin salir de Madrid")
 
 st.image('https://cdn.sanity.io/images/cctd4ker/production/73a42b4ea1644b2085acaad2896bfa4699687664-2320x920.jpg?rect=405,0,1490,920&w=3840&q=75&fit=clip&auto=format')
 
