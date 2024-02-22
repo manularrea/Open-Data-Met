@@ -86,7 +86,26 @@ else:
 
 st.altair_chart(chart, use_container_width=True)
 
-
+insight_expander = st.expander("Ver insight")
+insight_expander.markdown("""
+La evolución temporal del tamaño de la colección del Met muestra un incremento constante en
+el volumen de obras, marcado por picos muy puntuales de adquisición. Desde su fundación, el
+museo ha mantenido una tendencia al aumento gradual. Un punto de inflexión significativo se
+registró después de 1962, cuando la colección general experimentó un aumento notable con la adquisición de más de 40000 piezas. Sin embargo,
+al analizar destacadas y no destacadas, los picos están ubicados en distintos años.
+                          
+Las obras destacadas revelaron un pico de adquisición posterior a 1974, con cerca de 100 piezas
+adicionales. Por otro lado, las obras no destacadas alcanzaron su punto máximo de adquisición
+también en 1962, con casi 40000 piezas . Las obras de dominio público exhiben dos picos
+notables después de 1962 y posterior al 2010, con adquisiciones superiores a las 16000 piezas
+en ambos casos. Mientras tanto, las obras protegidas por derechos de autor muestran tres picos,
+el primero tras 1 962 con más de 20,000 piezas , seguido en 1994 con más de 7000, y nuevamente
+en 2010 con más de 5000 piezas.
+                          
+Estos hitos evidencian la complejidad en la evolución de la colección del Met, donde los
+momentos de intenso crecimiento podrían sugerir cambios en las políticas curatoriales y
+enfoques de selección a lo largo de los años.
+            """)
 #------------------------------ SIDE BAR --------------------------------------
 st.sidebar.markdown("---")
 st.sidebar.header('Manuela Larrea Gómez')

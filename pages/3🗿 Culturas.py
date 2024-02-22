@@ -73,6 +73,24 @@ bars = alt.Chart(culture_count).mark_bar().encode(
 st.altair_chart(bars, theme='streamlit', use_container_width=True)
 
 
+insight_expander = st.expander("Ver insight")
+insight_expander.markdown("""
+
+Los resultados sugieren que la cultura Americana es de gran interés para el
+Met en varios aspectos. En la colección general del museo, la cultura Americana tiene la mayor cantidad de
+piezas. Incluso cuando se consideran solo las obras destacadas, la cultura Americana sigue
+siendo la más prominente.
+                          
+Además, en la colección de obras protegidas por derechos de autor, la cultura Americana también
+es la más representada. Sin embargo, cuando se trata de obras de dominio público, la cultura
+Griega Ática es la más prominente.
+                          
+Por lo tanto, aunque la cultura Americana parece ser la que más interesa al Met en términos
+generales y en obras destacadas y protegidas por derechos de autor, la cultura Griega Ática es
+la más prominente en términos de obras de dominio público. Esto sugie re que el Met tiene un
+interés diversificado en diferentes culturas dependiendo del tipo de obras que se consideren.
+            """)
+
 #------------------------------ SIDE BAR --------------------------------------
 st.sidebar.markdown("---")
 st.sidebar.header('Manuela Larrea Gómez')

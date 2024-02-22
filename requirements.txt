@@ -1,5 +1,4 @@
 requests>=2.31.0
-json>=0.9.14
 pathlib>=1.0.1
 numpy>=1.24.3
 pandas>=2.1.4

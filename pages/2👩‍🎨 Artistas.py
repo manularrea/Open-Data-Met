@@ -92,7 +92,31 @@ bars = alt.Chart(artist_counts).mark_bar().encode(
 
 st.altair_chart(bars, theme='streamlit', use_container_width=True)
 
+insight_expander = st.expander("Ver insight")
+insight_expander.markdown("""
 
+El Met ha mostrado un interés particular en ciertos artistas a lo largo de los años. En términos de
+adquisiciones totales, Walker Evans lidera con más de 7,000 piezas, seguido por Kinney Brothers
+Tobacco Company y W. Duke, Sons & Co. Cuando consideramos solo las obras destacadas, el
+número de piezas por artista se reduce considerablemente, donde los diez artistas principales no
+exceden las 12 piezas cada uno. Esta lista de artistas está compuesta (en orden descendente) por John Singer Sargent, Winslow Homer, Thomas Eakins, Wendy Red, Rembrandt, Mary
+Cassatt, James McNeill Whistler, Edward J. Steichen, John Singleton y Vincent van Gogh.
+                          
+Sin embargo, al considerar solo las obras no destacadas, el número de obras por artista aumenta
+considerablemente otra vez y Walker Evans vuelve a liderar, seguido por Kinney Brothers
+Tobacco Company y W. Duke, Sons & Co. En términos de obras de dominio público, Allen &
+Ginter lidera, seguido por Goodwin & Company y Kinney Brothers Tobacco Company. Finalmente,
+para las obras protegidas por derechos de autor, Walker Evans lidera nuevamente, seguido por
+Topps Chewing Gum Company y American Tobacco Company.
+                          
+En términos porcentuales, Walker Evans representa aproximadamente el 1.57% de las obras
+totales, y más del 1.57% de las obras no destacadas y protegidas por derechos de autor.
+En conclusión, basándonos en el número de adquisiciones y la distribución de las obras
+destacadas, no destacadas, de dominio público y protegidas por derechos de autor, los artistas
+que más interesan al Met son Walker Evans, Kinney Brothers Tobacco Company , W. Duke, Sons
+& Co., Allen & Ginter, y Topps Chewing Gum Company. Esta información puede ser útil para el
+Met al tomar decisiones estratégicas sobre futuras adquisiciones y exposiciones.
+            """)
 
 #------------------------------ SIDE BAR --------------------------------------
 st.sidebar.markdown("---")

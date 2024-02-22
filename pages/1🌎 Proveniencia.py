@@ -61,7 +61,6 @@ df_countries = df_filtered.groupby('country').size().reset_index(name='Número d
 
 
 
-# Merge the mean accession year data with the original DataFrame
 
 df_countries = df_countries.sort_values(by='Número de piezas', ascending=False)
 
@@ -79,6 +78,29 @@ expander.dataframe(df_countries, column_config =
     hide_index=True, use_container_width=True)
 
 
+insight_expander = st.expander("Ver insight")
+insight_expander.markdown("""
+        
+Desde su apertura en 1871 hasta 2023, el Met ha adquirido un total de 100,532 piezas de arte
+de los Estados Unidos, lo que representa el mayor número de adquisiciones. De estas, el 24.7%
+son de dominio público y el 75.3% están protegidas por derechos de au tor. Francia ocupa el
+segundo lugar con 47,136 piezas, de las cuales el 43.7% son de dominio público y el 56.3% están
+protegidas por derechos de autor. Egipto, con 30,940 piezas, tiene una distribución equitativa
+entre las obras de dominio público y las pr otegidas por derechos de autor, cada una
+representando el 50% del total. El Reino Unido e Italia siguen con 27,547 y 24,178 piezas
+respectivamente, con una mayor proporción de obras de dominio público en Italia (53.1%) en
+comparación con el Reino Unido (42.7%)
+
+Al considerar solo las obras destacadas, los Estados Unidos lideran nuevamente con 593,
+seguidos por Francia con 262 y Egipto con 124. Sin embargo, al considerar solo las obras no
+destacadas, vemos un patrón similar con los Estados Unidos a la cabeza.
+            
+Estos datos indican que el Met tiene un interés particular en las obras de arte de los Estados
+Unidos, tanto en el dominio público como protegidas por derechos de autor. Sin embargo,
+también muestra un interés significativo en las obras de Francia, Egipto, Reino Unido e Italia.
+En conclusión, los países que más interesan al Met, basándonos en el número de adquisiciones,
+son los Estados Unidos, Francia, Egipto, el Reino Unido e Italia.
+            """)
 
 
 
