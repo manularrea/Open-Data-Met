@@ -1,1 +1,22 @@
+# Open-Data-Met
+
+This repository is dedicated to the analysis and visualization of the Metropolitan Museum of Art's open access collection data. It aims to provide tools and resources for exploring and understanding the rich and diverse collection of artworks housed at the Met.
+
+## Repository Contents
+
+- **Data Collection:** Scripts and tools for accessing and downloading the Met's open access collection data.
+- **Data Cleaning:** Methods for cleaning and preprocessing the raw collection data.
+- **Data Analysis:** Examples of statistical analysis and insights derived from the Met's collection data.
+- **Data Visualization:** Tools and examples for creating visual representations of the Met's collection, including artworks by period, style, artist, and more.
+
+## Requirements
+
+- Python 3.7+
+- Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Requests, Streamlit
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/manularrea/Open-Data-Met.git
 
